@@ -33,37 +33,37 @@ const AllianceDescriptionText = base.add(AllianceDescriptionTextPtr);
 function OfflineModeStrProt() {
     Memory.protect(TestName, 11, "rwx"); 
     Memory.protect(TestAlliance, 11, "rwx");
-	Memory.protect(MattiIi, 11, "rwx");
-	Memory.protect(MissPresident, 11, "rwx");
-	Memory.protect(LandOfArchers, 11, "rwx");
-	Memory.protect(AttackTheArchersClanMsg, 11, "rwx");
-	Memory.protect(PresidentOfGoblins, 11, "rwx");
-	Memory.protect(TheChiefPresident, 11, "rwx");
-	Memory.protect(ArmyOfBarbarians, 11, "rwx");
-	Memory.protect(AlliancesNames, 11, "rwx");
-	Memory.protect(TestMember, 11, "rwx");
-	Memory.protect(AllianceDescriptionText, 11, "rwx");
+    Memory.protect(MattiIi, 11, "rwx");
+    Memory.protect(MissPresident, 11, "rwx");
+    Memory.protect(LandOfArchers, 11, "rwx");
+    Memory.protect(AttackTheArchersClanMsg, 11, "rwx");
+    Memory.protect(PresidentOfGoblins, 11, "rwx");
+    Memory.protect(TheChiefPresident, 11, "rwx");
+    Memory.protect(ArmyOfBarbarians, 11, "rwx");
+    Memory.protect(AlliancesNames, 11, "rwx");
+    Memory.protect(TestMember, 11, "rwx");
+    Memory.protect(AllianceDescriptionText, 11, "rwx");
 }
 
 function OfflineMode() {
     TestName.writeUtf8String("Solar"); // Test Name
     TestAlliance.writeUtf8String("SolarClan"); // Test Alliance
-	MattiIi.writeUtf8String("Solar"); // Acceptor Name
-	MissPresident.writeUtf8String("RoyaleDev"); // Kick Message Leader Name
-	LandOfArchers.writeUtf8String("RoyaleDev Clan"); // Kick Message Leader Clan
-	AttackTheArchersClanMsg.writeUtf8String("Attack the RoyaleDev Clan! We need dragons and P.E.K.K.A's to defeat them.");  // Attack Msg
-	PresidentOfGoblins.writeUtf8String("Solar");  // Name
-	TheChiefPresident.writeUtf8String("TheSolarChief"); // Sender Mail Msg Name
-	ArmyOfBarbarians.writeUtf8String("SolarClan");  // Sender Mail Msg Alliance
-	AlliancesNames.writeUtf8String("SolarClan %i"); // All Alliances Names
-	TestMember.writeUtf8String("SolarBot %i"); // Test Member
-	AllianceDescriptionText.writeUtf8String("Welcome to the SolarLand!"); // Alliance Description Text
+    MattiIi.writeUtf8String("Solar"); // Acceptor Name
+    MissPresident.writeUtf8String("RoyaleDev"); // Kick Message Leader Name
+    LandOfArchers.writeUtf8String("RoyaleDev Clan"); // Kick Message Leader Clan
+    AttackTheArchersClanMsg.writeUtf8String("Attack the RoyaleDev Clan! We need dragons and P.E.K.K.A's to defeat them.");  // Attack Msg
+    PresidentOfGoblins.writeUtf8String("Solar");  // Name
+    TheChiefPresident.writeUtf8String("TheSolarChief"); // Sender Mail Msg Name
+    ArmyOfBarbarians.writeUtf8String("SolarClan");  // Sender Mail Msg Alliance
+    AlliancesNames.writeUtf8String("SolarClan %i"); // All Alliances Names
+    TestMember.writeUtf8String("SolarBot %i"); // Test Member
+    AllianceDescriptionText.writeUtf8String("Welcome to the SolarLand!"); // Alliance Description Text
 
-	OfflineModee.writeU8(1); // 0 = ConnectToProd, 1 = OfflineMode
+    OfflineModee.writeU8(1); // 0 = ConnectToProd, 1 = OfflineMode
 }
 
 function init() {
-	OfflineModeStrProt();
+    OfflineModeStrProt();
     OfflineMode();
 }
 
