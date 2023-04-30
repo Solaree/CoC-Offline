@@ -27,8 +27,8 @@ const TestMember = base.add(TestMemberPtr);
 const AllianceDescriptionText = base.add(AllianceDescriptionTextPtr);
 
 function OfflineModeStrProt() {
-    Memory.protect(TestName, 11, "rwx"); 
-    Memory.protect(TestAlliance, 11, "rwx");
+	Memory.protect(TestName, 11, "rwx"); 
+	Memory.protect(TestAlliance, 11, "rwx");
 	Memory.protect(MissPresident, 11, "rwx");
 	Memory.protect(LandOfArchers, 11, "rwx");
 	Memory.protect(AttackTheArchersClanMsg, 11, "rwx");
@@ -40,8 +40,8 @@ function OfflineModeStrProt() {
 }
 
 function OfflineMode() {
-    TestName.writeUtf8String("Solar"); // Test Name
-    TestAlliance.writeUtf8String("SolarClan"); // Test Alliance
+	TestName.writeUtf8String("Solar"); // Test Name
+	TestAlliance.writeUtf8String("SolarClan"); // Test Alliance
 	MissPresident.writeUtf8String("RoyaleDev"); // Message Leader Name
 	LandOfArchers.writeUtf8String("RoyaleDev Clan"); // Message Leader Clan
 	AttackTheArchersClanMsg.writeUtf8String("Attack the RoyaleDev Clan! We need dragons and P.E.K.K.A's to defeat them.")
