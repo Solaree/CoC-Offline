@@ -40,9 +40,9 @@ const AllianceDescriptionText = base.add(AllianceDescriptionTextPtr);
 
 
 function OfflineModeStrProt() {
-    Memory.protect(Locale, 11, "rwx");
-    Memory.protect(UpdateLoadingHomeJSON, 11, "rwx");
-    Memory.protect(HomeJSON, 11,"rwx");
+    // Memory.protect(Locale, 11, "rwx");
+    // Memory.protect(UpdateLoadingHomeJSON, 11, "rwx");
+    // Memory.protect(HomeJSON, 11,"rwx");
     Memory.protect(TestName, 11, "rwx");
     Memory.protect(TestAlliance, 11, "rwx");
     Memory.protect(MattiIi, 11, "rwx");
@@ -87,7 +87,7 @@ function OfflineMode() {
 function init() {
     OfflineModeStrProt();
     // BattleSimulationManagerisEnabled();
-    OfflineModeData();
+    // OfflineModeData();
     OfflineMode();
 }
 
